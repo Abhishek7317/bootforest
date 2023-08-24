@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-My BootStrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+    .c_name,.c_nav{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        word-spacing: 4px;
+      
+      }
+      .c_name{
+        font-size: 20px;
+      }
+
+        .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 0;
+        align-items: center;
+        }
+
+        .nav-hover:hover{
+          text-decoration: underline ;
+          text-decoration-color: gray ;
+          text-decoration-style:solid;
+          text-decoration-thickness: 1.5px;
+        }
+
+        .nav-text_color{
+          color: grey;
+        }
+
+        .z_index-nav{
+        z-index: 99;
+        width: 100%;
+        background: white;
+       }
+
+
+       /* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-left: 0;
+        padding-right: 0;
+       } */
+
+
+       .text-just{
+        text-align: justify;
+       }
+
+
+       .text-color-footer{
+          color: rgb(203, 203, 203);
+        }
+
+        .text-color-footer-pera{
+          color: rgb(203, 203, 203);
+          font-weight:400;
+        }
+
+    </style>
+
+</head>
+
+
+
+ <div class="nav-background overflow-hidden  ">
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed z_index-nav navbar-nav-scroll nav-shadow ">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder ms-2 text-primary fw-bolder c_name" href="#" title="My Bootstrap" >My BootStrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-caret-down-square-fill"></i>
+          </button>
+          <div class="collapse navbar-collapse ms-2" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  fw-bolder me-5  c_nav " aria-current="page" href="index.html"><i class="bi bi-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav active" href="Blog.html"><i class="bi bi-paperclip"></i> Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav"   href="Prices.html" ><i class="bi bi-tags"></i></i> Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav"   href="contact.html" ><i class="bi bi-telephone"></i> Contact Us</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+      <!-- banner area -->
+ 
+      <!-- <div class="container-fluid ">
+        <div class="row mt-5">
+          <div class="col-lg-12 ">
+            <img src="Banner/Banner.jfif" alt="banner" class="w-100 h-75">
+          </div>
+        </div> 
+
+        <div class="row mb-2  ">
+          <div class="col-lg-6">
+            <div class="row g-0 border rounded overflow-hidden flex-lg-row mb-4 shadow-sm  position-relative">
+              <div class="col p-4 d-flex flex-column position-relative">
+  
+                <h6 class="text-center fw-bolder fs-4">HTML</h6>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto text-just">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content.</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+              
+                <img src="Banner/html 5.png" alt="html5" class="bd-placeholder-img" width="200" height="250">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                
+                <h3 class="text-center fw-bolder fs-4">CSS</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto text-just">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+               <img src="Banner/CSS.png" alt="html5" class="bd-placeholder-img" width="200" height="250">
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        
+      
+      </div>
+
+      
+
+
+
+      <!-- Third info div -->
+      <div class="container">
+      <div class="row g-5">
+        <div class="col-12">
+          <div>
+            <br><br><br><br><br><br>
+          </div>
+    
+          <article class="blog-post  " style="font-family: Arial, Helvetica, sans-serif;">
+            <h2 class="blog-post-title text-center mb-3">About Web-Development</h2>
+            <p class="blog-post-meta text-center ">January 1, 2023 by <a href="#" class="text-dark">Abhishek</a></p>
+    
+            <p class="text-just text-center">Tim Berners-Lee, a British scientist, invented the World Wide Web (WWW) in 1989, while working at CERN.</p>
+            <hr>
+           
+            <p class="text-just text-center">Although they typically spend some time on the CERN site, the scientists usually work at universities and national laboratories in their home countries. Reliable communication tools are therefore essential.</p>
+           
+            <p class="text-just text-center">Most of these elements are styled by browsers with few modifications on our part.</p>
+            <h2 class="text-just text-center mb-3">Going global</h2>
+            <p class="text-just text-center">Thanks to the efforts of Paul Kunz and Louise Addis, the first Web server in the US came online in December 1991, once again in a particle physics laboratory: the Stanford Linear Accelerator Center (SLAC) in California. At this stage, there were essentially only two kinds of browser.</p>
+            <h3 class="text-just text-center mb-3">Open standards</h3>
+           <p class="text-just text-center"> An essential point was that the web should remain an open standard for all to use and that no-one should lock it up into a proprietary system. In this spirit, CERN submitted a proposal to the Commission of the European Union under the ESPRIT programme: “WebCore”. The goal of the project was to form an international consortium, in collaboration with the US Massachusetts Institute of Technology (MIT)</p class="text-just text-center"> </pre>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+
+            <p class="text-just text-center">The WWW design allowed easy access to existing information and an early web page linked to information useful to CERN scientists (e.g. the CERN phone book and guides for using CERN’s central computers). A search facility relied on keywords - there were no search engines in the early years.</p>
+          
+            <p class="text-just text-center">Berners-Lee’s original Web browser running on NeXT computers showed his vision and had many of the features of current Web browsers. In addition, it included the ability to modify pages from directly inside the browser – the first Web editing capability. This screenshot shows the browser running on a NeXT computer in 1993.
+            </p >
+       
+    
+            <p class="text-just text-center">This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+
+
+            <h2 class="blog-post-title text-just text-center mb-3">How the Web began</h2>
+           
+            <p class="text-just text-center ">Tim Berners-Lee wrote the first proposal for the World Wide Web in March 1989 and his second proposal in May 1990. Together with Belgian systems engineer Robert Cailliau, this was formalised as a management proposal in November 1990</p>
+            <ul class="text-just text-center list-unstyled">
+              <li >First list item</li>
+              <li>Second list item with a longer description</li>
+              <li>Third list item to close it out</li>
+            </ul>
+            <p class="text-just text-center">This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+
+
+            <nav class="blog-pagination text-center" aria-label="Pagination">
+              <a class="btn btn-outline-primary  active"             href="#">Older</a>
+              <a class="btn btn-outline-secondary disabled active"  href="#">Newer</a>
+            </nav>
+          </article>
+    
+        
+    
+           
+
+    
+          
+</div>
+
+
+
+
+<footer>
+  <div class="container-fluid  mt-5">
+    <div class="container-lg  mt-lg-5">
+       <hr class="hr">
+      <div class="row " style="margin-top: 100px;">
+        <div class="col-lg-3">
+          <h3 class="fs-5  text-color-footer  ">My BootStrap</h3>
+          <p class="fs-6  text-color-footer-pera mt-lg-4">Made By Abhishek</p>
+          <span class="  mt-lg-4 ">
+            <ul class="list-unstyled d-flex  gap-lg-3">
+              <li class="d-inline  text-color-footer  fs-5 "><i class='bx bxl-instagram'></i></li>
+              <li class="d-inline text-color-footer  fs-5"><i class='bx bxl-facebook'></i></li>
+              <li class="d-inline text-color-footer fs-5"><i class='bx bxl-twitter' ></i></li>
+              <li class="d-inline text-color-footer  fs-5"><i class='bx bxl-github'></i></li>
+            </ul>
+          </span>
+        </div>
+
+        <div class="col-9">
+          <div class="row">
+            <div class="col-lg-3 ">
+              <h4 class="fs-5  text-color-footer  ">PRODUCTS</h4>
+              <ul class="list-unstyled text-color-footer fw-semibold ">
+                <li class="d-nline pb-lg-2">Landing</li>
+                <li class="d-nline pb-lg-2">Pages</li>
+                <li class="d-nline pb-lg-2">Sections</li>
+                <li class="d-nline pb-lg-2">Documantation</li>
+                <li class="d-nline pb-lg-2">Changelog</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="fs-5  text-color-footer  ">TECHNICAL</h4>
+              <ul class="list-unstyled text-color-footer fw-semibold ">
+                <li class="d-nline pb-lg-2">Documantation</li>
+                <li class="d-nline pb-lg-2">Changelog</li>
+                <li class="d-nline pb-lg-2">Theme Customizer</li>
+                <li class="d-nline pb-lg-2">UI Kit</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="fs-5  text-color-footer  ">INCLUDES</h4>
+              <ul class="list-unstyled text-color-footer fw-semibold ">
+                <li class="d-nline pb-lg-2">Utillities</li>
+                <li class="d-nline pb-lg-2">Components</li>
+                <li class="d-nline pb-lg-2">Designes</li>
+                <li class="d-nline pb-lg-2">Layouts</li>
+                <li class="d-nline pb-lg-2">Code Sample</li>
+                <li class="d-nline pb-lg-2">Products</li>
+                <li class="d-nline pb-lg-2">Affilates</li>
+                <li class="d-nline pb-lg-2">Updates</li>
+
+
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="fs-5  text-color-footer  ">LEGAL</h4>
+              <ul class="list-unstyled text-color-footer fw-semibold ">
+                <li class="d-nline pb-lg-2">Lisene</li>
+                <li class="d-nline pb-lg-2">Terms & Conditions</li>
+                <li class="d-nline pb-lg-2">Privacy Policy</li>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg">
+        <hr style="color:rgb(167, 161, 161);  width: 100%; ">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class=" text-color-footer pt-lg-3 text-center">CopyRight &copy;<a href="#" class="text-decoration-none" style="color: rgb(203, 203, 203);"> myboot.co.in</a> 2023</p>
+          </div>
+          <div class="col-lg-6">
+            <p class=" text-color-footer pt-lg-3 text-center " >Privacy Policy . Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+
+      <!-- script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

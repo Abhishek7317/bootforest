@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BootStrap - Contact Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* body{
+          background-image: url(Background.png);
+          height: 700px;
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-blend-mode: difference;
+  
+  
+           
+          box-shadow: 10px;
+          
+        } */
+        .c_name,.c_nav{
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          word-spacing: 4px;
+        
+        }
+        .c_name{
+          font-size: 20px;
+        }
+  
+        .c_nav{
+          font-size: 17px;
+        }
+  
+  
+          .navbar-collapse {
+          flex-basis: 100%;
+          flex-grow: 0;
+          align-items: center;
+          }
+  
+          .nav-hover:hover{
+            text-decoration: underline ;
+            text-decoration-color: gray ;
+            text-decoration-style:solid;
+            text-decoration-thickness: 1.5px;
+          }
+  
+          .nav-text_color{
+            color: grey;
+          }
+  
+          /* .banner_hader{
+            display: flex;
+          } */
+  
+         .z_index-nav{
+          z-index: 99;
+          width: 100%;
+          background: white;
+         }
+
+         .nav-shadow{
+            box-shadow: 0 0 7px 0 grey;
+         }
+
+         .text-color-footer{
+          color: rgb(203, 203, 203);
+        }
+
+        .text-color-footer-pera{
+          color: rgb(203, 203, 203);
+          font-weight:400;
+        }
+
+        .shadow-input{
+          box-shadow: 0 0 10px lightgrey;
+        }
+
+        .animation{
+          animation: anim 1s linear forwards;
+        }
+
+        @keyframes anim {
+          0%{
+            opacity: 1;
+            
+            transform: translateY(100%);
+            
+          }
+
+          100%{
+            opacity: 1;
+            rotate: 0deg;
+            transform: translateY(0);
+          }
+          
+        }
+
+      
+
+          </style>
+</head>
+<body>
+
+    <div class="nav-background overflow-hidden  ">
+        <nav class="navbar navbar-expand-lg navbar-light position-fixed z_index-nav navbar-nav-scroll nav-shadow ">
+            <div class="container-fluid ">
+              <a class="navbar-brand fw-bolder ms-2 text-primary fw-bolder c_name" href="#" title="My Bootstrap" >My BootStrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-caret-down-square-fill"></i>
+              </button>
+              <div class="collapse navbar-collapse ms-2" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder me-5 nav-text_color  c_nav"   href="index.html" > <i class="bi bi-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav" href="Blog.html"><i class="bi bi-paperclip"></i> Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav"   href="Prices.html" ><i class="bi bi-tags"></i></i> Prices</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active fw-bolder me-5  c_nav  nav-hover" aria-current="page" href="contact.html"><i class="bi bi-telephone"></i> Contact Us</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>          
+    </div>
+
+    <div>
+      <br><br><br>
+    </div>
+   <!-- Information Area -->
+
+   <div class="container-fluid">
+    <div class="form container-lg">
+      <div class="row">
+        
+        <div class="col-2"></div>
+        <div class="col-8 card p-5 shadow border-0 animation">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-12">
+              <h2 class="text-center">Contact Us</h2>
+            </div>
+            <div class="col-md-12 text-center" >
+              <input type="text" class="form-control w-100 border-0 shadow-input" id="validationCustom01" placeholder="First Name" required >
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control border-0 shadow-input" id="validationCustom02" placeholder="Last Name" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control border-0 shadow-input" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="username"  required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control border-0 shadow-input" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control border-0 shadow-input" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input border-0 shadow-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <button class="btn btn-primary form-control" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+   </div>
+
+
+
+
+    <!-- <div class="container-fluid">
+      <div class="row py-4">
+          <div class="col-lg-12 bg-dark">
+              <h2 class="text-center fw-bolder text-light">
+                Address
+              </h2>
+          </div>
+      </div>
+      <div class="row py-4">
+          <div class="col-lg-4">
+              <div class="card">
+                  <img src="SVG/building-fill-gear.svg"  class="text-center d-block mx-auto mb-4 " width=50 height=50/>
+                  <div class="container card">
+                      <h3 class="text-secondary fs-5 ms-2 text-center">Address</h3>
+            
+
+                      <h5 class="ms-2 text-center">A-129/787 Connught Place <BR/>New Delhi , Delhi India </h5>
+                 
+
+                  </div>
+              </div> 
+          </div>
+          <div class="col-lg-4">
+              <div class="card">
+                  <img src="SVG/envelope.svg" class="text-center d-block mx-auto mb-4 " width=50 height=50/>
+                  <div class="container card">
+                      <h3 class="text-secondary fs-5 ms-2 text-center">Email</h3>  
+                      <h4 class="ms-2">For Technical Support </h4>
+                      <p class="ms-2"> mybootstrap@support.co.in</p>
+                      <h4 class="ms-2">For Payment Any Other Issue</h4>
+                      <p class="ms-2"> mybootstrap@customer.co.in</p>
+                  </div>
+              </div> 
+          </div>
+          <div class="col-lg-4">
+              <div class="card">
+                <img src="SVG/telephone-fill.svg" class="text-center d-block mx-auto mb-4 " width=50 height=50/>
+                  <div class="container card">
+                    <h3 class="text-secondary fs-5 ms-2 text-center">Phone-Number</h3>  
+                    <h4 class="ms-2">For Technical Support </h4>
+                    <p class="ms-2">011-454445</p>
+                    <h4 class="ms-2">For Payment Any Other Issue</h4>
+                    <p class="ms-2">011-545444</p>
+                  </div>
+              </div> 
+          </div>
+      </div>
+   </div> -->
+
+   
+
+   <!-- contact form -->
+   <!-- <div class="container ">
+   <main>
+    <div class="py-5 text-center text-center">
+      <img class="d-block mx-auto mb-4" src="SVG/Contact.svg" width="72" height="57">
+      <h2>Checkout form</h2>
+      <p class="lead">Please Message on Your Query Our Team Surely Just or hours after Message</div>
+
+   
+      <div class="col-md-7 col-lg-8 ">
+        <h4 class="mb-3">Just Fill These details So Our Team Will Contact You</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+          
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Required)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+      
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country(Required)</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+                <option>India</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required="">
+                <option value="">Choose...</option>
+                <option>Delhi</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-4">
+             
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              
+            </div>
+
+          
+
+           
+          </div>
+
+         
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div> -->
+
+      <!-- footer area -->
+
+      <footer>
+        <div class="container-fluid  mt-5">
+          <div class="container-lg  mt-lg-5">
+             <hr class="hr">
+            <div class="row " style="margin-top: 100px;">
+              <div class="col-lg-3">
+                <h3 class="fs-5  text-color-footer  ">My BootStrap</h3>
+                <p class="fs-6  text-color-footer-pera mt-lg-4">Made By Abhishek</p>
+                <span class="  mt-lg-4 ">
+                  <ul class="list-unstyled d-flex  gap-lg-3">
+                    <li class="d-inline  text-color-footer  fs-5 "><i class='bx bxl-instagram'></i></li>
+                    <li class="d-inline text-color-footer  fs-5"><i class='bx bxl-facebook'></i></li>
+                    <li class="d-inline text-color-footer fs-5"><i class='bx bxl-twitter' ></i></li>
+                    <li class="d-inline text-color-footer  fs-5"><i class='bx bxl-github'></i></li>
+                  </ul>
+                </span>
+              </div>
+      
+              <div class="col-9">
+                <div class="row">
+                  <div class="col-lg-3 ">
+                    <h4 class="fs-5  text-color-footer  ">PRODUCTS</h4>
+                    <ul class="list-unstyled text-color-footer fw-semibold ">
+                      <li class="d-nline pb-lg-2">Landing</li>
+                      <li class="d-nline pb-lg-2">Pages</li>
+                      <li class="d-nline pb-lg-2">Sections</li>
+                      <li class="d-nline pb-lg-2">Documantation</li>
+                      <li class="d-nline pb-lg-2">Changelog</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4 class="fs-5  text-color-footer  ">TECHNICAL</h4>
+                    <ul class="list-unstyled text-color-footer fw-semibold ">
+                      <li class="d-nline pb-lg-2">Documantation</li>
+                      <li class="d-nline pb-lg-2">Changelog</li>
+                      <li class="d-nline pb-lg-2">Theme Customizer</li>
+                      <li class="d-nline pb-lg-2">UI Kit</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4 class="fs-5  text-color-footer  ">INCLUDES</h4>
+                    <ul class="list-unstyled text-color-footer fw-semibold ">
+                      <li class="d-nline pb-lg-2">Utillities</li>
+                      <li class="d-nline pb-lg-2">Components</li>
+                      <li class="d-nline pb-lg-2">Designes</li>
+                      <li class="d-nline pb-lg-2">Layouts</li>
+                      <li class="d-nline pb-lg-2">Code Sample</li>
+                      <li class="d-nline pb-lg-2">Products</li>
+                      <li class="d-nline pb-lg-2">Affilates</li>
+                      <li class="d-nline pb-lg-2">Updates</li>
+      
+      
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4 class="fs-5  text-color-footer  ">LEGAL</h4>
+                    <ul class="list-unstyled text-color-footer fw-semibold ">
+                      <li class="d-nline pb-lg-2">Lisene</li>
+                      <li class="d-nline pb-lg-2">Terms & Conditions</li>
+                      <li class="d-nline pb-lg-2">Privacy Policy</li>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="container-lg">
+              <hr style="color:rgb(167, 161, 161);  width: 100%; ">
+              <div class="row">
+                <div class="col-lg-6">
+                  <p class=" text-color-footer pt-lg-3 text-center">CopyRight &copy;<a href="#" class="text-decoration-none" style="color: rgb(203, 203, 203);"> myboot.co.in</a> 2023</p>
+                </div>
+                <div class="col-lg-6">
+                  <p class=" text-color-footer pt-lg-3 text-center " >Privacy Policy . Terms & Conditions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+
+
+
+
+    
+
+   <!-- footer area -->
+   
+
+    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      /* body{
+        background-image: url(Background.png);
+        height: 700px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: difference;
+
+
+         
+        box-shadow: 10px;
+        
+      } */
+      .c_name,.c_nav{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        word-spacing: 4px;
+      
+      }
+      .c_name{
+        font-size: 20px;
+      }
+
+      .c_nav{
+        font-size: 17px;
+      }
+
+      #banner-header_anim{
+        animation: header 1s linear forwards;
+      }
+
+      @keyframes header{
+        0%{
+          transform: translateX(-20%);
+          opacity: 0;
+        }
+
+        100%{
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+
+      #banner-img_anim{
+        animation: img-anim 1s linear forwards;
+      }
+
+      @keyframes img-anim{
+        0%{
+          transform: translateX(20%);
+          opacity: 0;
+        }
+
+        100%{
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+        .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 0;
+        align-items: center;
+        }
+
+        .nav-hover:hover{
+          text-decoration: underline ;
+          text-decoration-color: gray ;
+          text-decoration-style:solid;
+          text-decoration-thickness: 1.5px;
+        }
+
+        .nav-text_color{
+          color: grey;
+        }
+
+        /* .banner_hader{
+          display: flex;
+        } */
+
+       .z_index-nav{
+        z-index: 99;
+        width: 100%;
+        background: white;
+       }
+
+       
+       .banner{
+        top: 63px;
+        border-bottom-left-radius: -50%;
+
+       }
+
+       .margin-main_content,.some-web{
+          margin-top: 120px;
+        }
+
+        .word_spacing-afterunderstanding{
+          word-spacing: 4px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          color: grey;
+          font-size: smaller;
+        }
+
+        .column-gap-web_img{
+          column-gap: 50px;
+
+          
+        }
+
+        .some-web p{
+          padding: 20px;
+        }
+
+        .some-web img:hover{
+          animation: img 0.5s linear forwards;
+        }
+
+        @keyframes img{
+          0%{
+            transform: translateY(0);
+          }
+
+          100%{
+            transform: translateY(-5%);
+          }
+        }
+
+        .some-web_con{
+          animation: content 1s linear forwards;
+        }
+
+        @keyframes content{
+          0%{
+            transform: translateY(-20%);
+            opacity: 0;
+            
+            
+          }
+
+          100%{
+            transform: translateY(0);
+            opacity: 1;
+            
+          }
+        }
+
+        .Documantation{
+          font-family: sans-serif;
+          color: rgb(62, 62, 62);
+        }
+
+        .annou{
+          width: 100%;
+          box-sizing: border-box;
+          box-shadow: 0 0 10px grey;
+        }
+
+        .some-web-anim{
+          animation: boot 2s linear forwards;
+
+        }
+
+        @keyframes boot{
+          0%{
+            opacity: 0;
+            transform: translateY(-20%);
+          }
+
+          100%{
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .megaphone{
+          width: 50px;
+        }
+
+        .announcement{
+          border-radius: 15px;
+          /* margin: 10px auto; */
+          
+          
+        }
+
+        .anou-anim{
+          animation: anou-anim 1.5s linear forwards;
+        }
+
+        @keyframes anou-anim{
+          0%{
+            opacity: 0;
+            transform: translateX(-20%);
+          
+          }
+
+          100%{
+            opacity: 1;
+            transform: translateX(0);
+            
+          }
+        }
+        .anou-anim1{
+          animation: anou-anim1 1.5s linear forwards;
+        }
+
+        @keyframes anou-anim1{
+          0%{
+            opacity: 0;
+            transform: translateX(20%);
+          }
+
+          100%{
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .text-color-footer{
+          color: rgb(203, 203, 203);
+        }
+
+        .text-color-footer-pera{
+          color: rgb(203, 203, 203);
+          font-weight:400;
+        }
+
+        .hr{
+          color:rgb(167, 161, 161); 
+          width: 90%;
+          margin: 13% 5% 4% 5%;
+        }
+        .nav-shadow{
+            box-shadow: 0 0 7px 0 grey;
+         }
+
+
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+  <div class="nav-background overflow-hidden  ">
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed z_index-nav navbar-nav-scroll nav-shadow ">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder ms-2 text-primary fw-bolder c_name" href="#" title="My Bootstrap" >My BootStrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-caret-down-square-fill"></i>
+          </button>
+          <div class="collapse navbar-collapse ms-2" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder me-5  c_nav " aria-current="page" href="index.html"><i class="bi bi-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav" href="Blog.html"><i class="bi bi-paperclip"></i> Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav"   href="Prices.html" ><i class="bi bi-briefcase-fill"></i> Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder me-5 nav-text_color nav-hover c_nav"   href="contact.html" ><i class="bi bi-telephone"></i> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-md pt-30 pt-3 position-relative banner  ">
+        <div class="d-lg-flex align-items-lg-center  ">
+          <div class="col-lg-6 me-5  " id="banner-header_anim">
+
+              <h3 class="ms-4 d-lg-flex justify-content-center align-items-lg-center fs-1  banner_hader  "  style="text-align: justify;">Built your website faster than ever using BootStrap</h3>
+              <p class="ms-4 banner_pera  d-flex align-items-md-center justify-content-center  "style="text-align: justify;">
+                We are here to make a new revolution in the world of internet by using our great Brain,Skills and Bootstrap5
+              </p>
+              <p class="banner_btn d-flex align-items-center justify-content-center column-gap-4 pt-3 ps-4">
+                <button type="button" class="btn btn-outline-light d-lg-inline-block " >Show More</button>
+                <button type="button" class="btn btn-outline-light d-lg-inline-block" >About Us</button>
+            </p>
+          </div>
+          <div class="col-lg-6  "  id="banner-img_anim">
+            <img src="banner.svg" alt="" class="w-100  ">
+
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    
+
+    <main>
+      
+
+      <div class="container-md d-flex margin-main_content justify-content-center">
+        <div class="row d-flex ">
+          <div class="col-12  w-100 some-web-anim">
+            <h4 class="d-flex  fs-5  justify-content-center">
+              Some WebSites Maded By BootStrap
+            </h4>
+            
+          </div>
+          <div class="col-12 d-flex justify-content-center some-web-anim ">
+            <p class=" word_spacing-afterunderstanding">After understanding the right use of each classes in BootStrap <br> you can also make this type of WebSites in few minutes</p>
+          </div>
+
+          <div class="some-web_con">
+          <div class="col-12 d-flex some-web  ">
+            <div class="row d-flex column-gap-web_img justify-content-center ">
+              <div class="col-lg-3">
+                <p class="fw-bold d-flex justify-content-lg-center  ">Demo 1 : Multipurpose</p>
+                <a href=""><img src="web-img1.png" alt="" class="w-100 shadow "></a>
+              </div>
+              <div class="col-lg-3">
+                <p class="fw-bold justify-content-lg-center d-flex">Demo 2 : Mobile App</p>
+                <a href=""><img src="web-img2.png" alt="" class="w-100 shadow"></a>
+              </div>
+              <div class="col-lg-3">
+                <p class="fw-bold justify-content-lg-center d-flex">Demo 3 : Desktop-App</p>
+                <a href=""><img src="web-img3.png" alt="" class="w-100 shadow"></a>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <div class="col-12 d-flex some-web  ">
+            <div class="row d-flex column-gap-web_img justify-content-center mb-lg-5">
+              <div class="col-lg-3">
+                <p class="fw-bold justify-content-lg-center d-flex" >Demo 4 : Agency</p>
+                <a href=""><img src="web-img4.png" alt="" class="w-100 shadow"></a>
+              </div>
+              <div class="col-lg-3">
+                <p class="fw-bold justify-content-lg-center d-flex">Demo 5 : Lead</p>
+                <a href=""><img src="web-img5.png" alt="" class="w-100 shadow"></a>
+              </div>
+              <div class="col-lg-3">
+                <p class="fw-bold justify-content-lg-center d-flex">Demo 6 : Desktop-App</p>
+                <a href=""><img src="web-img6.png" alt="" class="w-100 shadow"></a>
+              </div>
+            </div>
+            </div>
+
+            
+          </div>
+
+        </div>
+
+        
+      </div>
+
+      
+    </main>
+
+
+    <footer>
+      <div class="container-fluid  mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="fw-bold Documantation  text-center mb-lg-4" >Announcements</h3>
+            <div class="row">
+              <div class="col-12"><br><br></div>
+            </div>
+            <div class="row d-flex justify-content-lg-center mt-lg-4 ">
+              <div class="col-1"></div>
+              <div class="col-lg-4  py-2 anou-anim">
+                <div class="container">
+                  <div class="row shadow-lg announcement column-gap-lg-5 card border-0 ">
+                <p class="text-center pt-2">
+                  <img src="Megaphone.png" alt=""  class="megaphone  "> </p>
+                <p class="text-center ps-3 pe-3">
+                  This space gives you more room to expound on your message. Remember that writing effectively is an art. Start by using simple, everyday words people can easily understand. Be clear and direct to the point. Keep your thoughts flowing logically, and aim for brevity.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+              <div class="col-1"></div>
+
+              <div class="col-lg-4 py-2 anou-anim1">
+                <div class="container"> 
+                  <div class="row shadow-lg announcement card border-0">
+
+                  
+                <p class="text-center pt-2">
+                <img src="Megaphone.png" alt=""  class="megaphone "> </p>
+                <p class="ps-3 pe-3 text-center">
+                  This space gives you more room to expound on your message. Remember that writing effectively is an art. Start by using simple, everyday words people can easily understand. Be clear and direct to the point. Keep your thoughts flowing logically, and aim for brevity.
+                  </p>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+          
+        </div>
+       
+       
+
+        <div class="container-lg  mt-lg-5">
+           <hr class="hr">
+          <div class="row " style="margin-top: 100px;">
+            <div class="col-lg-3">
+              <h3 class="fs-5  text-color-footer  ">My BootStrap</h3>
+              <p class="fs-6  text-color-footer-pera mt-lg-4">Made By Abhishek</p>
+              <span class="  mt-lg-4 ">
+                <ul class="list-unstyled d-flex  gap-lg-3">
+                  <li class="d-inline  text-color-footer  fs-5 "><i class='bx bxl-instagram'></i></li>
+                  <li class="d-inline text-color-footer  fs-5"><i class='bx bxl-facebook'></i></li>
+                  <li class="d-inline text-color-footer fs-5"><i class='bx bxl-twitter' ></i></li>
+                  <li class="d-inline text-color-footer  fs-5"><i class='bx bxl-github'></i></li>
+                </ul>
+              </span>
+            </div>
+
+            <div class="col-9">
+              <div class="row">
+                <div class="col-lg-3 ">
+                  <h4 class="fs-5  text-color-footer  ">PRODUCTS</h4>
+                  <ul class="list-unstyled text-color-footer fw-semibold ">
+                    <li class="d-nline pb-lg-2">Landing</li>
+                    <li class="d-nline pb-lg-2">Pages</li>
+                    <li class="d-nline pb-lg-2">Sections</li>
+                    <li class="d-nline pb-lg-2">Documantation</li>
+                    <li class="d-nline pb-lg-2">Changelog</li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h4 class="fs-5  text-color-footer  ">TECHNICAL</h4>
+                  <ul class="list-unstyled text-color-footer fw-semibold ">
+                    <li class="d-nline pb-lg-2">Documantation</li>
+                    <li class="d-nline pb-lg-2">Changelog</li>
+                    <li class="d-nline pb-lg-2">Theme Customizer</li>
+                    <li class="d-nline pb-lg-2">UI Kit</li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h4 class="fs-5  text-color-footer  ">INCLUDES</h4>
+                  <ul class="list-unstyled text-color-footer fw-semibold ">
+                    <li class="d-nline pb-lg-2">Utillities</li>
+                    <li class="d-nline pb-lg-2">Components</li>
+                    <li class="d-nline pb-lg-2">Designes</li>
+                    <li class="d-nline pb-lg-2">Layouts</li>
+                    <li class="d-nline pb-lg-2">Code Sample</li>
+                    <li class="d-nline pb-lg-2">Products</li>
+                    <li class="d-nline pb-lg-2">Affilates</li>
+                    <li class="d-nline pb-lg-2">Updates</li>
+
+
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h4 class="fs-5  text-color-footer  ">LEGAL</h4>
+                  <ul class="list-unstyled text-color-footer fw-semibold ">
+                    <li class="d-nline pb-lg-2">Lisene</li>
+                    <li class="d-nline pb-lg-2">Terms & Conditions</li>
+                    <li class="d-nline pb-lg-2">Privacy Policy</li>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-lg">
+            <hr style="color:rgb(167, 161, 161);  width: 100%; ">
+            <div class="row">
+              <div class="col-lg-6">
+                <p class=" text-color-footer pt-lg-3 text-center">CopyRight &copy;<a href="#" class="text-decoration-none" style="color: rgb(203, 203, 203);"> myboot.co.in</a> 2023</p>
+              </div>
+              <div class="col-lg-6">
+                <p class=" text-color-footer pt-lg-3 text-center " >Privacy Policy . Terms & Conditions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+</body>
+</html>
